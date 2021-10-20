@@ -36,7 +36,7 @@ header .header__logo {
   align-items: center;
 }
 .location i {
-  margin-right: 1rem;
+  margin-right: 16px;
 }
 .location > p {
   display: flex;

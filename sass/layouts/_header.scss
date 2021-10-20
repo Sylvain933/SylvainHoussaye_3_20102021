@@ -1,0 +1,10 @@
+header {
+    height: 80px;
+    @include flex-center;
+    box-shadow:5px 5px 10px lightgrey;
+    position: relative;
+    z-index: 1;
+    .header__logo {
+        font-family: "shrikhand", sans-serif;
+    }
+}
