@@ -1,11 +1,11 @@
 @import "./base/reset.scss";
 @import "./utils/variables.scss";
+@import "./utils/mixins.scss";
+
 
 header {
     height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     box-shadow:5px 5px 10px lightgrey;
     position: relative;
     z-index: 1;
@@ -18,9 +18,7 @@ header {
     height: 60px;
     color: $primary-location;
     background: $background-location;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     i {
         margin-right: 1rem;
     }
