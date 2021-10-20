@@ -1,3 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+}
 
+a:link, a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 10px lightgrey;
+  position: relative;
+  z-index: 1;
+}
+header .header__logo {
+  font-family: "shrikhand", sans-serif;
+}
+
+.location {
+  height: 60px;
+  color: #353535;
+  background: #EAEAEA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.location i {
+  margin-right: 1rem;
+}
+.location > p {
+  display: flex;
+  justify-content: center;
+}
 
 /*# sourceMappingURL=style.css.map */
