@@ -3,3 +3,12 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin link-color {
+    &:link {
+        color: white;
+    }
+    &:visited {
+        color: white;
+    }
+}

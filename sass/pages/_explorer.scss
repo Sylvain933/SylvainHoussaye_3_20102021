@@ -1,0 +1,30 @@
+.explorer {
+    background-color: $background;
+    height: 200px;
+    padding: 30px 0;
+    @include flex-center;
+    p {
+        padding: 20px;
+    }
+    &__content {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    &__button {
+        @include flex-center;
+        height: 45px;
+        font-weight: bold;
+        padding: 0 20px;
+        border-radius: 40px;
+        background-image: $color-gradient;
+        box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.25);
+        @include link-color;
+        &:hover {
+            filter: brightness(1.1);
+            box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.7);
+        }
+    }
+}
