@@ -15,7 +15,7 @@ header {
 }
 
 .location {
-    height: 60px;
+    height: 40px;
     color: $primary-location;
     background: $background-location;
     @include flex-center;
@@ -25,5 +25,6 @@ header {
     > p {
         display: flex;
         justify-content: center;
+        font-weight: bold;
     }
 }

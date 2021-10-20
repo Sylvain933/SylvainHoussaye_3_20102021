@@ -28,7 +28,7 @@ header .header__logo {
 }
 
 .location {
-  height: 60px;
+  height: 40px;
   color: #353535;
   background: #EAEAEA;
   display: flex;
@@ -41,6 +41,7 @@ header .header__logo {
 .location > p {
   display: flex;
   justify-content: center;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
