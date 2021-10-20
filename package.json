@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sylvain933/SylvainHoussaye_3_20102021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sylvain933/SylvainHoussaye_3_20102021/issues"
+  },
+  "homepage": "https://github.com/Sylvain933/SylvainHoussaye_3_20102021#readme"
+}
