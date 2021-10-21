@@ -1,0 +1,48 @@
+.tutorial {
+    max-width: 950px;
+  margin: auto;
+  padding: 20px;
+  list-style-type: none;
+  counter-reset: compteliste;
+  &__list {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  &__element {
+    background: #F6F6F6;
+    box-shadow: 5px 5px 10px lightgrey;
+    flex-grow: 1;
+    display: flex;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 15px;
+    align-items: center;
+    position: relative;
+    &:hover {
+        background: #f2eafb;
+        i {
+            color: #9356DC;
+        }
+    }
+    &::before {
+        counter-increment: compteliste;
+  content: counter(compteliste);
+  background: #9356DC;
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  left: -12px;
+    }
+    i {
+        color: grey;
+    }
+    p {
+        padding-left: 20px;
+    }
+  }
+}
