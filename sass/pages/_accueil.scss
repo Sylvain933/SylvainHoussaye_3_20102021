@@ -1,0 +1,156 @@
+
+
+/***** LOCALISATION *****/
+
+.location {
+    height: 50px;
+    color: #353535;
+    background: #EAEAEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+        margin-right: 16px;
+    }
+    > p {
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+    }
+}
+
+/***** EXPLORER *****/
+
+.explorer {
+    background-color: $background;
+    height: 200px;
+    padding: 30px 0;
+    @include flex-center;
+    p {
+        padding: 20px;
+    }
+    &__content {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    &__button {
+        @include flex-center;
+        height: 45px;
+        font-weight: bold;
+        padding: 0 20px;
+        border-radius: 40px;
+        background-image: $color-gradient;
+        box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.25);
+        @include link-color;
+        &:hover {
+            filter: brightness(1.1);
+            box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.7);
+        }
+    }
+}
+
+/***** TUTORIEL *****/
+
+.tutorial {
+    max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  list-style-type: none;
+  counter-reset: compteliste;
+  &__list {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  &__element {
+    background: #F6F6F6;
+    box-shadow: 5px 5px 10px lightgrey;
+    flex-grow: 1;
+    display: flex;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 15px;
+    align-items: center;
+    position: relative;
+    &:hover {
+        background: #f2eafb;
+        i {
+            color: #9356DC;
+        }
+    }
+    &::before {
+        counter-increment: compteliste;
+  content: counter(compteliste);
+  background: #9356DC;
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  left: -12px;
+    }
+    i {
+        color: grey;
+    }
+    p {
+        padding-left: 20px;
+    }
+  }
+}
+
+
+/*****RESTAURANTS *****/
+
+.restaurant {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+    flex-flow: column wrap;
+    background: $background;
+    border-radius: 30px 30px 0 0;
+    &__card {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+}
+
+.card {
+    position: relative;
+    width: 400px;
+    margin: 10px 0;
+    background: white;
+    border-radius: 20px;
+    &__content {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        i {
+            font-size: 30px;
+        }
+    }
+    
+    img {
+        height: 180px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+    }
+}
+
+.new {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: $tertiary;
+    border-radius: 3px;
+    padding: 5px;
+    font-weight: bold;
+    color: darken($color: $tertiary, $amount: 40%);
+}
