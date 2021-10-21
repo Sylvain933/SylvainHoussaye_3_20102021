@@ -1,3 +1,21 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 0.8;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-9999px);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +30,27 @@ a:link, a:visited {
 
 ul {
   list-style-type: none;
+}
+
+.loader {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  animation: loader 0.1s 3s forwards;
+}
+.loader__bar {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border: 5px solid transparent;
+  border-top: 5px solid #9356DC;
+  border-radius: 50%;
+  animation: spin 1.5s ease-in-out infinite;
 }
 
 header {
@@ -85,46 +124,6 @@ header .header__logo {
 
 img {
   width: 100%;
-}
-
-.loader {
-  height: 100%;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  animation: loader 0.1s 3s both;
-}
-.loader__bar {
-  position: relative;
-  height: 100px;
-  width: 100px;
-  border: 5px solid transparent;
-  border-top: 5px solid #9356DC;
-  border-radius: 50%;
-  animation: spin 1.5s ease-in-out infinite forwards;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes loader {
-  0% {
-    opacity: 0.8;
-    transform: translateX(0);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(-9999px);
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
