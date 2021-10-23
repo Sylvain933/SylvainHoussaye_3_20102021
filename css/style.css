@@ -67,6 +67,35 @@ header .header__logo {
   font-family: "shrikhand", sans-serif;
 }
 
+footer {
+  background: #353535;
+}
+
+.about {
+  color: white;
+  max-width: 900px;
+  margin: auto;
+  padding: 25px 0 35px 25px;
+}
+.about__logo {
+  font-family: "shrikhand", sans-serif;
+}
+.about__list li {
+  display: flex;
+}
+.about__list a {
+  margin: 2px 0;
+}
+.about__list a:link {
+  color: white;
+}
+.about__list a:visited {
+  color: white;
+}
+.about__list i {
+  margin-right: 10px;
+}
+
 /***** LOCALISATION *****/
 .location {
   height: 50px;

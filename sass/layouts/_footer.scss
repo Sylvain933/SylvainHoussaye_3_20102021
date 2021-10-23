@@ -1,0 +1,28 @@
+footer {
+    background: $background-footer;
+}
+
+.about {
+    color: white;
+    max-width: 900px;
+    margin: auto;
+    padding: 25px 0 35px 25px;
+    &__logo {
+        font-family: "shrikhand", sans-serif;
+
+    }
+    &__list {
+        li {
+            display: flex;
+        }
+        
+        a {
+            @include link-color;
+            margin: 2px 0;
+        }
+
+        i {
+            margin-right: 10px;
+        }
+    }
+}
