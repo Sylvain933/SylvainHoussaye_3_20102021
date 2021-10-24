@@ -235,6 +235,24 @@ footer {
 }
 .card__content i {
   font-size: 30px;
+  font-weight: 100;
+}
+.card__content i:hover::before {
+  animation: heart 1s ease-in-out;
+  font-weight: 900;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to top left, #9356DC, #FF79DA);
+  -webkit-text-fill-color: transparent;
+}
+@keyframes heart {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 .card img {
   height: 180px;
