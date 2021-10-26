@@ -37,7 +37,7 @@
         flex-direction: column;
     }
     &__button {
-        @include btn
+        @include btn;
     }
 }
 
@@ -124,17 +124,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        i {
-            font-size: 30px;
-            font-weight: 100;
-            &:hover::before {
-                animation: heart 1s ease-in-out;
-                font-weight: 900;
-                -webkit-background-clip: text;
-                background-image: $color-gradient-heart;
-                -webkit-text-fill-color: transparent;
+        .heart {
+            i {
+                @include heart-animation
             }
-        }
+        }   
     }
     img {
         height: 180px;

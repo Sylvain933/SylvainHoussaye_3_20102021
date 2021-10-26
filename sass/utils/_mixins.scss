@@ -27,3 +27,15 @@
         box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.7);
     }
 }
+
+@mixin heart-animation {
+    font-size: 30px;
+    font-weight: 100;
+    &:hover::before {
+        animation: heart 1s ease-in-out;
+        font-weight: 900;
+        -webkit-background-clip: text;
+        background-image: $color-gradient-heart;
+        -webkit-text-fill-color: transparent;
+    }
+}

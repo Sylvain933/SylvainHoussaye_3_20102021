@@ -1,0 +1,61 @@
+/**** RESTAURANTS ****/ 
+
+.background__menu {
+    width: 100%;
+    object-fit: cover;
+    height: 800px;
+}
+
+.menus {
+    background: $background;
+    border-radius: 30px 30px 0 0;
+    max-width: 900px;
+    margin: auto;
+    margin-top: -450px;
+    padding: 15px;
+    position: relative;
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+        .heart {
+            margin-right: 20px;
+            i {
+                @include heart-animation;
+                cursor: pointer;
+            }
+        }
+    }
+    &__button {
+        @include flex-center;
+        &__command{
+            @include btn;
+        }
+    }
+}
+
+.menu {
+    margin-bottom: 40px;
+    &__card {
+        height: 65px;
+        background: white;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 5px 5px 10px lightgrey;
+        cursor: pointer;
+        &__description {
+            display: flex;
+            flex-flow: column;
+            justify-content: space-around;
+        }
+        &__price {
+            display: flex;
+            align-items: flex-end;
+            font-weight: bold;
+        }
+    }
+}

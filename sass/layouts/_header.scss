@@ -3,9 +3,14 @@
 header {
     height: 80px;
     @include flex-center;
-    box-shadow:5px 5px 10px lightgrey;
+    box-shadow: 5px 5px 10px -5px grey;
     position: relative;
     .header__logo {
         font-family: "shrikhand", sans-serif;
+        &__back {
+            position: absolute;
+            font-size: 20px;
+            left: 20px;
+        }
     }
 }
