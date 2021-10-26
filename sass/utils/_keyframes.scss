@@ -30,3 +30,23 @@
         transform: scale(1);
     }
 }
+
+@keyframes valid {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes menu__load {
+    0%  {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

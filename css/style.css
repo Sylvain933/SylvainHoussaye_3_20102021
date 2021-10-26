@@ -26,6 +26,22 @@
     transform: scale(1);
   }
 }
+@keyframes valid {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes menu__load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -298,6 +314,9 @@ footer {
   padding: 15px;
   position: relative;
 }
+.menus h1 {
+  font-family: "shrikhand", sans-serif;
+}
 .menus__title {
   display: flex;
   align-items: center;
@@ -349,6 +368,36 @@ footer {
 .menu {
   margin-bottom: 40px;
 }
+.menu__load {
+  animation: menu__load 0.5s forwards;
+}
+.menu__load__1 {
+  animation: menu__load 0.5s 0.1s forwards;
+}
+.menu__load__2 {
+  animation: menu__load 0.5s 0.2s forwards;
+}
+.menu__load__3 {
+  animation: menu__load 0.5s 0.3s forwards;
+}
+.menu__load__4 {
+  animation: menu__load 0.5s 0.4s forwards;
+}
+.menu__load__5 {
+  animation: menu__load 0.5s 0.5s forwards;
+}
+.menu__load__6 {
+  animation: menu__load 0.5s 0.6s forwards;
+}
+.menu__load__7 {
+  animation: menu__load 0.5s 0.7s forwards;
+}
+.menu__load__8 {
+  animation: menu__load 0.5s 0.8s forwards;
+}
+.menu__load__9 {
+  animation: menu__load 0.5s 0.9s forwards;
+}
 .menu__card {
   position: relative;
   height: 65px;
@@ -360,49 +409,44 @@ footer {
   box-shadow: 5px 5px 10px lightgrey;
   cursor: pointer;
   overflow: hidden;
+  opacity: 0;
 }
 .menu__card:hover .menu__card__confirmed {
-  margin: -10px -10px 0 0;
-  transform-origin: right;
-  animation: confirmed 0.5s ease-in-out;
+  margin: -10px;
+}
+.menu__card:hover i {
+  animation: valid 0.5s;
 }
 .menu__card__description {
   display: flex;
   flex-flow: column;
   justify-content: space-around;
   flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu__card__price {
   display: flex;
   align-items: flex-end;
   font-weight: bold;
-  margin-right: 10px;
+  margin-right: 20px;
+  padding-left: 10px;
 }
 .menu__card__confirmed {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: -10px -75px 0 0;
+  margin: -11px -75px -10px 5px;
   height: 65px;
   width: 65px;
   background: #99E2D0;
   border-radius: 0 15px 15px 0;
-  opacity: 1;
+  transition-duration: 0.5s;
 }
 .menu__card__confirmed i {
   color: white;
   font-size: 25px;
-}
-
-@keyframes confirmed {
-  0% {
-    transform: scaleX(0);
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-    transform: scaleX(1);
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
