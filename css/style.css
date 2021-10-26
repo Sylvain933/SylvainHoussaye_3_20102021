@@ -350,25 +350,59 @@ footer {
   margin-bottom: 40px;
 }
 .menu__card {
+  position: relative;
   height: 65px;
   background: white;
   padding: 10px;
   margin: 10px 0;
   border-radius: 15px;
   display: flex;
-  justify-content: space-between;
   box-shadow: 5px 5px 10px lightgrey;
   cursor: pointer;
+  overflow: hidden;
+}
+.menu__card:hover .menu__card__confirmed {
+  margin: -10px -10px 0 0;
+  transform-origin: right;
+  animation: confirmed 0.5s ease-in-out;
 }
 .menu__card__description {
   display: flex;
   flex-flow: column;
   justify-content: space-around;
+  flex: 1;
 }
 .menu__card__price {
   display: flex;
   align-items: flex-end;
   font-weight: bold;
+  margin-right: 10px;
+}
+.menu__card__confirmed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -10px -75px 0 0;
+  height: 65px;
+  width: 65px;
+  background: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  opacity: 1;
+}
+.menu__card__confirmed i {
+  color: white;
+  font-size: 25px;
+}
+
+@keyframes confirmed {
+  0% {
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
