@@ -109,6 +109,8 @@ footer {
   padding: 25px 0 35px 25px;
 }
 .about__logo {
+  font-size: 20px;
+  padding-bottom: 20px;
   font-family: "shrikhand", sans-serif;
 }
 .about__list li {
@@ -148,21 +150,24 @@ footer {
 /***** EXPLORER *****/
 .explorer {
   background-color: #F6F6F6;
-  height: 200px;
-  padding: 30px 0;
+  padding: 40px 0;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.explorer h2 {
+  margin: 0 70px;
+}
 .explorer p {
-  padding: 20px;
+  padding: 15px 35px;
 }
 .explorer__content {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
   flex-direction: column;
+  flex-wrap: nowrap;
 }
 .explorer__button {
   display: flex;
@@ -174,6 +179,7 @@ footer {
   border-radius: 40px;
   background-image: linear-gradient(to top left, #9356DC, #FF79DA);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  margin-top: 10px;
 }
 .explorer__button:link {
   color: white;
@@ -203,11 +209,21 @@ footer {
   box-shadow: 5px 5px 10px lightgrey;
   flex-grow: 1;
   display: flex;
-  padding: 20px;
+  padding: 20px 20px 20px 30px;
   margin: 15px;
   border-radius: 15px;
   align-items: center;
   position: relative;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .tutorial__element {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .tutorial__element {
+    width: 100%;
+  }
 }
 .tutorial__element:hover {
   background: #f2eafb;
@@ -245,6 +261,11 @@ footer {
   background: #F6F6F6;
   border-radius: 30px 30px 0 0;
 }
+@media screen and (max-width: 767px) {
+  .restaurant {
+    border-radius: 0;
+  }
+}
 .restaurant__card {
   display: flex;
   flex-flow: row wrap;
@@ -253,11 +274,16 @@ footer {
 
 .card {
   position: relative;
-  width: 400px;
+  width: 100%;
   margin: 10px 0;
   background: white;
   border-radius: 20px;
   box-shadow: 5px 5px 10px lightgrey;
+}
+@media screen and (min-width: 1200px) {
+  .card {
+    width: 400px;
+  }
 }
 .card__content {
   padding: 10px;
@@ -397,6 +423,20 @@ footer {
 }
 .menu__load__9 {
   animation: menu__load 0.5s 0.9s forwards;
+}
+.menu__title {
+  position: relative;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+}
+.menu__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #99E2D0;
+  height: 3px;
+  width: 35px;
 }
 .menu__card {
   position: relative;
