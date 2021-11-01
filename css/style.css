@@ -476,6 +476,10 @@ footer {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.menu__card__description > p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .menu__card__price {
   display: flex;
   align-items: flex-end;

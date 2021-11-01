@@ -118,6 +118,10 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+            > p {
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
         }
         &__price {
             display: flex;
