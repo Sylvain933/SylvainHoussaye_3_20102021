@@ -4,6 +4,10 @@
     width: 100%;
     object-fit: cover;
     height: 800px;
+    @media screen and (max-width: 900px) {
+        height: 300px;
+    }
+    
 }
 
 .menus {
@@ -14,6 +18,9 @@
     margin-top: -450px;
     padding: 15px;
     position: relative;
+    @media screen and (max-width: 900px) {
+        margin-top: -80px;
+    }
     h1 {
         font-family: "shrikhand", sans-serif;
     }
