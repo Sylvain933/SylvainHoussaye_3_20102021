@@ -350,8 +350,9 @@ footer {
     margin-top: -80px;
   }
 }
-.menus h1 {
+.menus h2 {
   font-family: "shrikhand", sans-serif;
+  margin-left: 7px;
 }
 .menus__title {
   display: flex;
@@ -435,9 +436,11 @@ footer {
   animation: menu__load 0.5s 0.9s forwards;
 }
 .menu__title {
+  display: inline-block;
   position: relative;
-  margin-bottom: 15px;
+  margin: 0 0 7px 7px;
   padding-bottom: 5px;
+  text-transform: uppercase;
 }
 .menu__title::after {
   content: "";
