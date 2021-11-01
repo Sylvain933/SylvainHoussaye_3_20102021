@@ -215,7 +215,7 @@ footer {
   align-items: center;
   position: relative;
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 900px) {
   .tutorial__element {
     width: 100%;
   }
@@ -280,7 +280,7 @@ footer {
   border-radius: 20px;
   box-shadow: 5px 5px 10px lightgrey;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
   .card {
     width: 400px;
   }
